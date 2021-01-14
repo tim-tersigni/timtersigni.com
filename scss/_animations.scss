@@ -1,0 +1,12 @@
+@import 'functions';
+
+.shrink-on-hover {
+    transform: perspective(rem(1px)) translateZ(0);
+    box-shadow: 0 0 rem(1px) rgba(0, 0, 0, 0);
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.shrink-on-hover:hover, .shrink-on-hover:focus, .shrink-on-hover:active {
+    transform: scale(0.9);
+}
