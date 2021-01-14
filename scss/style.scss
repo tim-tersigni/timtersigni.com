@@ -1,6 +1,7 @@
 @charset 'utf-8';
 @import 'functions';
 @import 'background';
+@import 'animations';
 
 /* breakpoint variables for media queries */
 $breakpoint-tablet: 481px;
@@ -114,16 +115,41 @@ main {
             grid-gap: rem(10px);
 
             .tile {
+                overflow: scroll;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 border-radius: rem(10px);
                 font-size: 1em;
+
+                /* hide scrollbar */
+                scrollbar-width: none; /* firefox */
+                -ms-overflow-style: none; /* internet explorer */
+                &::-webkit-scrollbar {   /* chromium */
+                    width: 0;
+                    height: 0;
+                }
             }
 
             .work {
-                background-color: red;
+                background-color: #ffffff;
             }
 
             .work-desc-wrapper {
-                background-color: green;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                background-color: #433F3F;
+            }
+
+            .work-desc-title {
+                margin: 0px;
+            }
+
+            .work-desc {
+                margin-left: rem(10px);
+                margin-right: rem(10px);
+                text-align: left;
             }
         }
     }

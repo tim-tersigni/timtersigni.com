@@ -29,6 +29,24 @@ body::after {
   border-radius: 0.625rem;
 }
 
+.shrink-on-hover {
+  -webkit-transform: perspective(0.0625rem) translateZ(0);
+          transform: perspective(0.0625rem) translateZ(0);
+  -webkit-box-shadow: 0 0 0.0625rem rgba(0, 0, 0, 0);
+          box-shadow: 0 0 0.0625rem rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+}
+
+.shrink-on-hover:hover, .shrink-on-hover:focus, .shrink-on-hover:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
 /* breakpoint variables for media queries */
 html {
   font-size: 100%;
@@ -166,16 +184,57 @@ main .work-wrapper .work-content {
 }
 
 main .work-wrapper .work-content .tile {
+  overflow: scroll;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 0.625rem;
   font-size: 1em;
+  /* hide scrollbar */
+  scrollbar-width: none;
+  /* firefox */
+  -ms-overflow-style: none;
+  /* internet explorer */
+}
+
+main .work-wrapper .work-content .tile::-webkit-scrollbar {
+  /* chromium */
+  width: 0;
+  height: 0;
 }
 
 main .work-wrapper .work-content .work {
-  background-color: red;
+  background-color: #ffffff;
 }
 
 main .work-wrapper .work-content .work-desc-wrapper {
-  background-color: green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-color: #433F3F;
+}
+
+main .work-wrapper .work-content .work-desc-title {
+  margin: 0px;
+}
+
+main .work-wrapper .work-content .work-desc {
+  margin-left: 0.625rem;
+  margin-right: 0.625rem;
+  text-align: left;
 }
 
 main .work-wrapper:after {
