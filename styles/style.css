@@ -64,7 +64,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .page-wrapper {
@@ -165,6 +165,24 @@ main .status-box .status {
   text-align: left;
 }
 
+main .status-box .status span {
+  border-right: 0.05em solid;
+  -webkit-animation: caret 1s steps(1) infinite;
+          animation: caret 1s steps(1) infinite;
+}
+
+@-webkit-keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
 main .work-wrapper {
   position: relative;
   width: 100%;
@@ -222,6 +240,11 @@ main .work-wrapper .work-content .work {
   background-color: #ffffff;
 }
 
+main .work-wrapper .work-content .work img {
+  width: 100%;
+  height: 100%;
+}
+
 main .work-wrapper .work-content .work-desc-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -233,11 +256,18 @@ main .work-wrapper .work-content .work-desc-wrapper {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  background-color: #433F3F;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #433f3f;
 }
 
 main .work-wrapper .work-content .work-desc-title {
-  margin: 0px;
+  margin-left: 0.25em;
+  margin-right: 0.25em;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
 }
 
 main .work-wrapper .work-content .work-desc {
@@ -254,6 +284,7 @@ main .work-wrapper:after {
 
 .site-footer {
   color: #ffffff;
+  font-size: 0.625rem;
 }
 
 /* tablet */
