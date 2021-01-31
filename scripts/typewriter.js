@@ -1,5 +1,5 @@
 var txt = 
-'Seeking a programming internship in the Dallas or Austin area for the summer of 2021.<br/><br/><a href="https://github.com/tim-tersigni" style="color: white">Contact me!<\a> ';
+'Seeking a programming internship in the Dallas or Austin area for the summer of 2021.<br/><br/>Contact me: <a href="mailto:timothy.tersigni.dev@gmail.com" target="_blank" style="color: white">timothy.tersigni.dev@gmail.com<\a> ';
 var speed = 50;
 var i = 0;
 var inTag = false;
