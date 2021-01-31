@@ -32,8 +32,33 @@ body {
   height: auto;
   // background-color: lightgrey;
   grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr rem(20px);
+  grid-template-rows: auto auto 1fr rem(20px);
   grid-gap: rem(20px);
+}
+
+.main-nav {
+  list-style: none;
+  list-style-position: initial;
+  font-size: 1.25rem;
+
+  ul {
+    padding: 0px;
+    display: grid;
+    grid-template-columns: auto auto auto auto 50%;
+    margin-bottom: 0px;
+  }
+
+  li {
+    display: inline-block;
+    margin-right: 1.5rem;
+    margin-left: 0px;
+  }
+
+  a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0px;
+  }
 }
 
 .site-header {
@@ -42,13 +67,11 @@ body {
   vertical-align: middle;
   color: #ffffff;
   font-size: 1.4em;
-}
 
-.main-nav {
-  background: purple;
-  list-style: none;
-  list-style-position: initial;
-  list-style-image: none;
+  .intro {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
 }
 
 main {

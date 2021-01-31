@@ -77,9 +77,36 @@ body {
   height: auto;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: auto 1fr 1.25rem;
-      grid-template-rows: auto 1fr 1.25rem;
+  -ms-grid-rows: auto auto 1fr 1.25rem;
+      grid-template-rows: auto auto 1fr 1.25rem;
   grid-gap: 1.25rem;
+}
+
+.main-nav {
+  list-style: none;
+  list-style-position: initial;
+  font-size: 1.25rem;
+}
+
+.main-nav ul {
+  padding: 0px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto 50%;
+      grid-template-columns: auto auto auto auto 50%;
+  margin-bottom: 0px;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-right: 1.5rem;
+  margin-left: 0px;
+}
+
+.main-nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0px;
 }
 
 .site-header {
@@ -92,11 +119,9 @@ body {
   font-size: 1.4em;
 }
 
-.main-nav {
-  background: purple;
-  list-style: none;
-  list-style-position: initial;
-  list-style-image: none;
+.site-header .intro {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
 }
 
 main {
