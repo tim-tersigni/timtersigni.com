@@ -1,4 +1,6 @@
-console.log('typewriter.js using observer');
+console.log('typewriter.js loaded');
+
+
 
 var txt = 
 'Seeking a programming internship in the Dallas or Austin area for the summer of 2021. I am hardworking and always eager to learn! Please contact me with any opportunities.<br/><br/>Contact me: <a href="mailto:timothy.tersigni.dev@gmail.com" target="_blank" style="color: white">timothy.tersigni.dev@gmail.com<\a> ';
@@ -16,18 +18,13 @@ function typeWriter () {
 
         i++;
 
-        if (!inTag)
+        if(i === 1)
+          setTimeout(typeWriter, 3000);
+        else if (!inTag)
           setTimeout(typeWriter, speed);
         else
           typeWriter();
       }
 }
 
-// Intersection Observer triggers typeWriter function when status is in view
-let options = {
-  root: null,
-  rootMargin: '0px',
-  threshold: .3
-}
-let observer = new IntersectionObserver(typeWriter, options);
-observer.observe(document.getElementById('status'));
+typeWriter();

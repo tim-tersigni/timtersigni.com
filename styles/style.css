@@ -37,6 +37,42 @@ body::after {
   background-color: #1f223d;
 }
 
+.fade-in {
+  opacity: 1;
+  -webkit-animation-name: fade-in;
+          animation-name: fade-in;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in:hover {
+  opacity: 1;
+  -webkit-transition: none;
+  transition: none;
+}
+
 .shrink-on-hover {
   -webkit-transform: perspective(0.0625rem) translateZ(0);
           transform: perspective(0.0625rem) translateZ(0);
@@ -50,7 +86,9 @@ body::after {
   transition-property: transform, -webkit-transform;
 }
 
-.shrink-on-hover:hover, .shrink-on-hover:focus, .shrink-on-hover:active {
+.shrink-on-hover:hover,
+.shrink-on-hover:focus,
+.shrink-on-hover:active {
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
 }
