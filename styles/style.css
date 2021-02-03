@@ -25,8 +25,16 @@ body::after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #0F0F0F;
+  background-color: #06081a;
   border-radius: 0.625rem;
+}
+
+.status-box {
+  background-color: #1f223d;
+}
+
+.work-desc-wrapper {
+  background-color: #1f223d;
 }
 
 .shrink-on-hover {
@@ -181,7 +189,6 @@ main .status-box {
   margin-bottom: 0.625rem;
   height: 18.75rem;
   border-radius: 0.625rem;
-  border: 0.0625rem solid lightgray;
 }
 
 main .status-box .status {
@@ -284,15 +291,17 @@ main .work-wrapper .work-content .work-desc-wrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #433f3f;
 }
 
 main .work-wrapper .work-content .work-desc-title {
-  margin-left: 0.25em;
-  margin-right: 0.25em;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  margin-top: 0.5em;
+  margin-bottom: 0.25em;
   text-align: center;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #ffffff;
 }
 
 main .work-wrapper .work-content .work-desc {
@@ -378,16 +387,15 @@ main .work-wrapper:after {
     margin-bottom: 0.625rem;
     height: 18.75rem;
     border-radius: 0.625rem;
-    border: 0.0625rem solid lightgray;
   }
   main .status-box .status {
     margin: 0.625rem;
     margin-top: 1.25rem;
     text-align: left;
   }
-  main .work-wrapper {
-    width: 100%;
-    height: 300px;
+  main .work-wrapper .tile .work-desc-title {
+    font-size: 1.5em;
+    line-height: 1.5em;
   }
   .site-footer {
     color: #ffffff;
@@ -395,144 +403,6 @@ main .work-wrapper:after {
 }
 
 /* medium screen */
-@media screen and (min-width: 1279px) {
-  .page-wrapper {
-    margin-left: 12.5rem;
-    margin-right: 12.5rem;
-  }
-  .site-header {
-    line-height: 2.52em;
-    color: #ffffff;
-    font-size: 2.5rem;
-  }
-  main {
-    margin-left: 12.5rem;
-    margin-right: 12.5rem;
-    margin-bottom: 12.5rem;
-  }
-  main .about-wrapper {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  main .about {
-    text-align: left;
-    margin-right: 0.9375rem;
-  }
-  main .me-image {
-    margin-left: auto;
-  }
-  main h2 {
-    font-size: 2.5rem;
-    margin-top: 3.125rem;
-    margin-bottom: 0.9375rem;
-  }
-  main p {
-    font-size: 1.125rem;
-    margin-top: 0px;
-    margin-bottom: 0.9375rem;
-    text-align: center;
-  }
-  main img {
-    width: 12.5rem;
-    height: 12.5rem;
-  }
-  main .status-box {
-    margin-left: 0.625rem;
-    margin-right: 0.625rem;
-    margin-bottom: 0.625rem;
-    height: 18.75rem;
-    border-radius: 0.625rem;
-    border: 0.0625rem solid lightgray;
-  }
-  main .status-box .status {
-    margin: 0.625rem;
-    margin-top: 1.25rem;
-    text-align: left;
-  }
-  main .work-wrapper {
-    width: 100%;
-    height: 300px;
-  }
-  .site-footer {
-    color: #ffffff;
-  }
-}
-
-/* mediumplus screen */
-@media screen and (min-width: 1650px) {
-  .page-wrapper {
-    margin-left: 12.5rem;
-    margin-right: 12.5rem;
-  }
-  .site-header {
-    line-height: 2.52em;
-    color: #ffffff;
-    font-size: 2.5rem;
-  }
-  main {
-    margin-left: 12.5rem;
-    margin-right: 12.5rem;
-    margin-bottom: 12.5rem;
-  }
-  main .about-wrapper {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  main .about {
-    text-align: left;
-    margin-right: 0.9375rem;
-  }
-  main .me-image {
-    margin-left: auto;
-  }
-  main h2 {
-    font-size: 2.5rem;
-    margin-top: 3.125rem;
-    margin-bottom: 0.9375rem;
-  }
-  main p {
-    font-size: 1.125rem;
-    margin-top: 0px;
-    margin-bottom: 0.9375rem;
-    text-align: center;
-  }
-  main img {
-    width: 12.5rem;
-    height: 12.5rem;
-  }
-  main .status-box {
-    margin-left: 0.625rem;
-    margin-right: 0.625rem;
-    margin-bottom: 0.625rem;
-    height: 18.75rem;
-    border-radius: 0.625rem;
-    border: 0.0625rem solid lightgray;
-  }
-  main .status-box .status {
-    margin: 0.625rem;
-    margin-top: 1.25rem;
-    text-align: left;
-  }
-  main .work-wrapper {
-    width: 100%;
-    height: 300px;
-  }
-  .site-footer {
-    color: #ffffff;
-  }
-}
-
-/* large screen */
 @media screen and (min-width: 1900px) {
   .page-wrapper {
     margin-left: 31.25rem;
@@ -546,7 +416,6 @@ main .work-wrapper:after {
   main {
     margin-left: 12.5rem;
     margin-right: 12.5rem;
-    margin-bottom: 12.5rem;
   }
   main .about-wrapper {
     -webkit-box-orient: horizontal;
@@ -585,12 +454,87 @@ main .work-wrapper:after {
     margin-bottom: 0.625rem;
     height: 18.75rem;
     border-radius: 0.625rem;
-    border: 0.0625rem solid lightgray;
   }
   main .status-box .status {
     margin: 0.625rem;
     margin-top: 1.25rem;
     text-align: left;
+  }
+  main .work-wrapper .tile .work-desc-title {
+    font-size: 1.5em;
+    line-height: 1.5em;
+  }
+  .tile .work-desc-title {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    color: red;
+  }
+  .site-footer {
+    color: #ffffff;
+  }
+}
+
+/* large screen */
+@media screen and (min-width: 2200px) {
+  .page-wrapper {
+    margin-left: 43.75rem;
+    margin-right: 43.75rem;
+  }
+  .site-header {
+    line-height: 2.52em;
+    color: #ffffff;
+    font-size: 2.5rem;
+  }
+  main {
+    margin-left: 18.75rem;
+    margin-right: 18.75rem;
+  }
+  main .about-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  main .about {
+    text-align: left;
+    margin-right: 0.9375rem;
+  }
+  main .me-image {
+    margin-left: auto;
+  }
+  main h2 {
+    font-size: 3.125rem;
+    margin-top: 3.125rem;
+    margin-bottom: 0.9375rem;
+  }
+  main p {
+    font-size: 1.375rem;
+    margin-top: 0px;
+    margin-bottom: 0.9375rem;
+    text-align: center;
+  }
+  main img {
+    width: 15.625rem;
+    height: 15.625rem;
+  }
+  main .status-box {
+    margin-left: 0.625rem;
+    margin-right: 0.625rem;
+    margin-bottom: 0.625rem;
+    height: 18.75rem;
+    border-radius: 0.625rem;
+  }
+  main .status-box .status {
+    margin: 0.625rem;
+    margin-top: 1.25rem;
+    text-align: left;
+  }
+  main .work-wrapper .tile .work-desc-title {
+    font-size: 1.5em;
+    line-height: 1.5em;
   }
   .site-footer {
     color: #ffffff;
