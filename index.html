@@ -1,86 +1,110 @@
 <!DOCTYPE html>
 <head>
-    <meta charset="utf-8">
-    <title>Tim Tersigni</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>Tim Tersigni</title>
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/animations.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <html>
-    <body>
-        <div class="page-wrapper">
-            <nav class="main-nav">
-                <ul>
-                    <li class="Resume shrink-on-hover">
-                        <a href="./documents/tim-tersigni-resume.pdf" target="_blank">Resume</a>
-                    </li>
-                    <li class="LinkedIn shrink-on-hover">
-                        <a href="https://www.linkedin.com/in/timothy-tersigni" target="_blank">LinkedIn</a>
-                    </li>
-                    <li class="GitHub shrink-on-hover">
-                        <a href="https://github.com/tim-tersigni" target="_blank">GitHub</a>
-                    </li>
-                    <li class="Email shrink-on-hover">
-                        <a href="mailto:tim.tersigni@gmail.com" target="_blank">Email</a>
-                    </li>
-                </ul>
-            </nav>
-            <header class="site-header">
-                <h1 class="intro">Hello,<br> my name is<br> Tim Tersigni.</h1>
-            </header>
-            <div class="main-background fade-in" id="main-background">
-                <main class="main-wrapper" id="main-wrapper">
-                    <h2 class="about-header" id="about-header">About Me</h2>
-                    <div class="about-wrapper" id="about-wrapper">
-                        <p class="about" id="about">I am a junior Computer Science student at UT Dallas interested in learning more about web development. 
-                        I plan on graduating with my B.S. degree in 2023.</p>
-                        <img class=me-image id="me-image" src="/images/meCircle.png" alt="A picture of me">
-                    </div>
+  <body>
+    <div class="content">
+      <!-- main nav bar -->
+      <nav class="main-nav">
+        <ul>
+          <li class="Resume shrink-on-hover">
+            <a href="./documents/tim-tersigni-resume.pdf" target="_blank">Resume</a>
+          </li>
+          <li class="LinkedIn shrink-on-hover">
+            <a href="https://www.linkedin.com/in/timothy-tersigni" target="_blank">LinkedIn</a>
+          </li>
+          <li class="GitHub shrink-on-hover">
+            <a href="https://github.com/tim-tersigni" target="_blank">GitHub</a>
+          </li>
+          <li class="Email shrink-on-hover">
+            <a href="mailto:tim.tersigni@gmail.com" target="_blank">Email</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- header -->
+      <header>
+        <h1 class="intro">Hello,<br> my name is<br> Tim Tersigni.</h1>
+      </header>
+      <!-- content -->
+      <main class="main-wrapper">
+        <h2 class="about-header">About Me</h2>
+        <div class="about-wrapper">
+          <p class="about">I am a junior Computer Science student at UT Dallas interested in learning more about web development. 
+          I plan on graduating with my B.S. degree in 2023.</p>
+          <img class="me-image" src="/images/meCircle.png" alt="A picture of me">
+        </div>
 
-                    <h2 class="status-header" id="status-header">Status</h2>
-                    <div class="status-box" id="status-box">
-                        <p class="status" id="status"></p>
-                    </div>
-                    <h2 class="work-header" id="work-header">Featured Work</h2>
-                    <div class="work-wrapper" id="work-wrapper">
-                        <div class="work-content" id="work-content">
-                            <div class="tile work 1 shrink-on-hover" id="work-1">
-                                <a href="https://github.com/Neilio3264/Emission-Omission" target="_blank">
-                                    <span class="linkSpanner"></span>
-                                </a>
-                                <img src="/images/emission-omisison.PNG" alt="Work placeholder">
-                            </div>
-                            <div class="tile work-desc-wrapper 1" id="work-desc-wrapper-1">
-                                <h3 class="work-desc-title 1">Emission Omission</h3>
-                                <p class="work-desc 1" id="work-desc-1">
-                                    Emission Omission is a web app that uses distance, car type, and fuel type 
-                                    to estimate a car trip's carbon footprint. The app was made using React and Google 
-                                    Maps API. Created as a submission for the Boilermake VIII hackathon.
-                                </p>
-                            </div>
-                            <div class="tile work-desc-wrapper 2" id="work-desc-wrapper-2">
-                                <h3 class="work-desc-title 2">Portfolio Website</h3>
-                                <p class="work-desc 2" id=work-desc-2>
-                                    I made this website to help present myself and my work, but it was also a project 
-                                    in itself. I wanted to get more familiar with the building blocks of 
-                                    web development: HTML, CSS, and vanilla javascript. Halfway through
-                                    I ended up using Sass (SCSS) to better format my messy CSS document. 
-                                    This was my first project creating a site from scratch, and it definetly made me more 
-                                    confident in my raw HTML and CSS skills.
-                                </p>
-                            </div>
-                            <div class="tile work 2 shrink-on-hover" id="work-2">
-                                <a href="https://github.com/tim-tersigni/Portfolio-Website" target="_blank">
-                                    <span class="linkSpanner"></span>
-                                </a>
-                                <img src="/images/portfolio-website.PNG" alt="Work placeholder">
-                            </div>
-                        </div>
-                    </div>
-                </main>
+        <h2 class="status-header">Status</h2>
+        <div class="status-box">
+          <p class="status"></p>
+        </div>
+        <h2 class="work-header">Featured Work</h2>
+        <div class="work-wrapper">
+          <div class="work-content">
+            <div class="tile work 1 shrink-on-hover">
+              <a href="https://github.com/Neilio3264/Emission-Omission" target="_blank">
+                <span class="linkSpanner"></span>
+              </a>
+              <img src="/images/emission-omisison.PNG" alt="Work placeholder">
             </div>
-            <footer class="site-footer" id="footer"></footer>
-            <script src="./scripts/typewriter.js"></script>
-    </body>
+
+            <div class="tile work-desc-wrapper">
+              <h3 class="work-desc-title">Emission Omission</h3>
+              <p class="work-desc">
+                Emission Omission is a web app that uses distance, car type, and fuel type 
+                to estimate a car trip's carbon footprint. The app was made using React and Google 
+                Maps API. Created as a submission for the Boilermake VIII hackathon.
+              </p>
+            </div>
+
+            <div class="tile work-desc-wrapper">
+              <h3 class="work-desc-title">Portfolio Website</h3>
+              <p class="work-desc">
+                I made this website to help present myself and my work, but it was also a project 
+                in itself. I wanted to get more familiar with the building blocks of 
+                web development: HTML, CSS, and vanilla javascript. Halfway through
+                I ended up using Sass (SCSS) to better format my messy CSS document. 
+                This was my first project creating a site from scratch, and it definetly made me more 
+                confident in my raw HTML and CSS skills.
+              </p>
+            </div>
+            
+            <div class="tile work shrink-on-hover">
+              <a href="https://github.com/tim-tersigni/Portfolio-Website" target="_blank">
+                <span class="linkSpanner"></span>
+              </a>
+              <img src="/images/portfolio-website.PNG" alt="Work placeholder">
+            </div>
+
+            
+            <div class="tile work-desc-wrapper">
+              <h3 class="work-desc-title">Portfolio Website</h3>
+              <p class="work-desc">
+                I made this website to help present myself and my work, but it was also a project 
+                in itself. I wanted to get more familiar with the building blocks of 
+                web development: HTML, CSS, and vanilla javascript. Halfway through
+                I ended up using Sass (SCSS) to better format my messy CSS document. 
+                This was my first project creating a site from scratch, and it definetly made me more 
+                confident in my raw HTML and CSS skills.
+              </p>
+            </div>
+          </div>
+          <div class="tile work shrink-on-hover">
+            <a href="https://github.com/tim-tersigni/Portfolio-Website" target="_blank">
+              <span class="linkSpanner"></span>
+            </a>
+            <img src="/images/portfolio-website.PNG" alt="Work placeholder">
+          </div>
+        </div>
+      </main>
+      <script src="./scripts/typewriter.js"></script>
+  </body>
 </html>
