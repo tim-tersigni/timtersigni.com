@@ -1,5 +1,5 @@
 {
-  "project": [
+  "projects": [
     {
       "name": "Emission Omission",
       "description": "Collaborated with hackathon team of 4 to program a web application in 48 hours that calculates the carbon emissions of a vehicle’s travel between two points using Google Maps API.\nDesigned website layout using Figma and coded front-end using React, Git, and npm.",
