@@ -58,3 +58,20 @@
   -webkit-transform: scale(0.9);
   transform: scale(0.9);
 }
+
+main .status-box .status span {
+  -webkit-animation: caret 1s steps(1) infinite;
+  animation: caret 1s steps(1) infinite;
+}
+
+@-webkit-keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
