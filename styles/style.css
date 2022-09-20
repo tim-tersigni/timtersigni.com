@@ -66,3 +66,13 @@ header {
   margin: 3rem;
 }
 
+.about-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.me-image {
+  width: 10.9375rem;
+  height: 10.9375rem;
+}
