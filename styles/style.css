@@ -83,10 +83,12 @@ header {
 }
 
 .status-box {
+  overflow: scroll;
   background-color: #1f223d;
   width: 100%;
   height: 18.75rem;
   border-radius: 0.625rem;
+  margin-bottom: 3.5rem;
 }
 
 .status-box .status {
@@ -95,6 +97,36 @@ header {
   margin-top: 1.25rem;
 }
 
-main .status-box .status span {
-  border-right: 0.05em solid;
+.work-grid {
+  display: grid;
+  grid-auto-rows: minmax(min-content, max-content);
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  border-radius: 0.625rem;
+  margin: 2rem;
+  margin-top: 0rem;
+}
+
+.project-desc-tile {
+  padding: 0.5em;
+}
+.tile {
+  display: flex;
+  background-color: #1f223d;
+  border-radius: 0.625rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  overflow: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.tile::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.project-image {
+  width: 100%;
 }
