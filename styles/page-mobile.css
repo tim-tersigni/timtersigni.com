@@ -1,6 +1,11 @@
 @media screen and (max-width: 767px) {
   .content {
-    margin: 2vw 10vw 10vw 10vw;
+    margin: 2vw 5vw 5vw 5vw;
+  }
+
+  body {
+    font-size: 1rem;
+    line-height: 1.75rem;
   }
 
   h1 {
@@ -19,6 +24,13 @@
   }
 
   .main-wrapper {
-    padding: 3.25rem 0.5rem 3.25rem 0.5rem;
+    padding: 3.25rem 1rem 3.25rem 1rem;
+  }
+
+  .about-wrapper {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: top;
+    gap: 1.5rem;
   }
 }
