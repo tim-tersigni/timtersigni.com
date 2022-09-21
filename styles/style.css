@@ -89,6 +89,12 @@ header {
   height: 18.75rem;
   border-radius: 0.625rem;
   margin-bottom: 3.5rem;
+  scrollbar-width: none;
+}
+
+.status-box::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
 
 .status-box .status {
@@ -111,6 +117,7 @@ header {
 .project-desc-tile {
   padding: 0.5em;
 }
+
 .tile {
   display: flex;
   background-color: #1f223d;
