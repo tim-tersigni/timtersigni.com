@@ -1,0 +1,24 @@
+@media screen and (max-width: 767px) {
+  .content {
+    margin: 2vw 10vw 10vw 10vw;
+  }
+
+  h1 {
+    font-size: 3rem;
+    line-height: 4.5rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+    line-height: 3.25rem;
+  }
+
+  .main-nav li {
+    font-size: 1rem;
+    margin-right: 1rem;
+  }
+
+  .main-wrapper {
+    padding: 3.25rem 0.5rem 3.25rem 0.5rem;
+  }
+}

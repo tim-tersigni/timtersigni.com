@@ -1,0 +1,124 @@
+body {
+  font-size: 1.1rem;
+  line-height: 2rem;
+}
+
+.content {
+  margin: 2vw 10vw 10vw 10vw;
+}
+
+h1 {
+  font-size: 5rem;
+  line-height: 6.5rem;
+  margin-bottom: 2.5rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.main-nav {
+  font-size: 1.25rem;
+}
+
+.main-nav li {
+  margin-right: 1.5rem;
+}
+
+header {
+  display: inline-flex;
+  vertical-align: middle;
+}
+
+.intro {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #06081a;
+  border-radius: 0.625rem;
+  padding: 3.5rem 7rem 3.5rem 7rem;
+  max-width: 700px;
+}
+
+.about-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-basis: 0;
+  margin-bottom: 3.5rem;
+}
+
+.about {
+  line-height: 2rem;
+  margin-right: 2rem;
+}
+
+.me-image {
+  align-self: center;
+  width: 12rem;
+  max-width: 50%;
+  height: auto;
+}
+
+.status-box {
+  overflow: scroll;
+  background-color: #1f223d;
+  width: 100%;
+  height: 18.75rem;
+  border-radius: 0.625rem;
+  margin-bottom: 3.5rem;
+  scrollbar-width: none;
+}
+
+.status-box::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.status-box .status {
+  text-align: left;
+  margin: 0.625rem;
+  margin-top: 1.25rem;
+}
+
+.work-grid {
+  display: grid;
+  grid-auto-rows: minmax(min-content, max-content);
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  border-radius: 0.625rem;
+  margin: 2rem;
+  margin-top: 0rem;
+}
+
+.project-desc-tile {
+  padding: 0.5em;
+}
+
+.tile {
+  display: flex;
+  background-color: #1f223d;
+  border-radius: 0.625rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  overflow: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.tile::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.project-image {
+  width: 100%;
+}
