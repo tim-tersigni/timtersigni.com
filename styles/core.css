@@ -10,6 +10,11 @@ body {
   background-attachment: fixed;
 }
 
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
 h1,
 h2 {
   font-weight: bold;
