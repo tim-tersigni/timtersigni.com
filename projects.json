@@ -38,7 +38,8 @@
     {
       "name": "Linux Home Server",
       "description": "Ubuntu Server home lab project built to improve and experiment with networking skills",
-      "image": "../images/tux.jpg"
+      "image": "../images/tux.jpg",
+      "link": ""
     },
 
     {
