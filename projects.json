@@ -1,17 +1,31 @@
 {
   "projects": [
     {
-      "name": "Emission Omission",
-      "description": "Collaborated with hackathon team of 4 to program a web application in 48 hours that calculates the carbon emissions of a vehicle’s travel between two points using Google Maps API.\nDesigned website layout using Figma and coded front-end using React, Git, and npm.",
-      "image": "../images/emission-omission.png",
-      "link": "https://github.com/Neilio3264/Emission-Omission"
+      "name": "Nerveli Medical Dashboard",
+      "description": "Medical dashboard web-app for nerve pain management startup Nerveli",
+      "image": "../images/nerveli-dashboard.png",
+      "link": "https://www.youtube.com/watch?v=4PQANvC7iZY"
+    },
+
+    {
+      "name": "4 Bit Breadboard ALU",
+      "description": "Custom designed and hand-wired 4-bit ALU built on breadboards",
+      "image": "../images/breadboard.png",
+      "link": "https://www.youtube.com/watch?v=whvLmXYZUJQ"
     },
 
     {
       "name": "Client Server Chat",
-      "description": "Designed multi-threaded server-client chat program in Python using TCP and UDP protocols with encryption. Coded chat log system which saves chat session contents to server file for client viewing.",
+      "description": "Multi-threaded client-server chat application utilizing TCP, UDP, and encryption",
       "image": "../images/client-server-chat.png",
       "link": "https://github.com/tim-tersigni/Server-Based-Chat"
+    },
+
+    {
+      "name": "Emission Omission",
+      "description": "Hackathon web-app built to compute carbon emissions of a vehicles travel using Google Maps API",
+      "image": "../images/emission-omission.png",
+      "link": "https://github.com/Neilio3264/Emission-Omission"
     },
 
     {
@@ -19,6 +33,12 @@
       "description": "Created interactive drawing grid using JavaScript which listens for mouse hovering events. Constructed website layout using HTML and CSS after designing UI in Figma.",
       "image": "../images/etch-a-sketch.png",
       "link": "https://github.com/tim-tersigni/odin-etch-a-sketch"
+    },
+
+    {
+      "name": "Linux Home Server",
+      "description": "Ubuntu Server home lab project built to improve and experiment with networking skills",
+      "image": "../images/tux.jpg"
     },
 
     {
