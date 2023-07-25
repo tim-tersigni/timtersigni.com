@@ -52,11 +52,21 @@
   transition-property: transform, -webkit-transform;
 }
 
-.shrink-on-hover:hover,
-.shrink-on-hover:focus,
-.shrink-on-hover:active {
-  -webkit-transform: scale(0.9);
-  transform: scale(0.9);
+.shrink-on-hover:hover {
+  -webkit-transform: scale(0.95);
+  transform: scale(0.95);
+}
+
+.shrink-on-hover:hover img{
+  transition-property: -moz-filter, -ms-filter, -o-filter, -webkit-filter, filter;
+  transition-duration: 0.3s;
+  filter: brightness(70%) blur(4px);
+}
+
+.shrink-on-hover:hover .project-title{
+  transition-property: opacity;
+  transition-duration: 0.3s;
+  opacity: 100%;
 }
 
 main .status-box .status span {

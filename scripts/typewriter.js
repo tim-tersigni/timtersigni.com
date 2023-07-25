@@ -1,32 +1,34 @@
 console.log('typewriter.js loaded');
 
-
-
-var txt = 
-`Seeking a Software Engineering internship remotely or in the Dallas or Austin area before graduation in May 2023. 
+var txt = `Seeking a full-time job in software engineering, cloud computing, or DevOps. 
 I am eager to apply my experience and learn new things! Please contact me with any opportunities.<br/><br/>Contact me:
  <a href="mailto:tim.tersigni@gmail.com" target="_blank" style="color: white">tim.tersigni@gmail.com<\a>`;
-var speed = 50;
+var speed = 45;
 var i = 0;
 var inTag = false;
-function typeWriter () {
-      if (i < txt.length) {
-        document.getElementById('status').innerHTML = txt.substring(0, i) +'<span aria-hidden="true"></span>';
+var cursorVisible = true;
 
-        if (txt.charAt(i) === '<')
-          inTag = true;
-        if (txt.charAt(i) === '>')
-          inTag = false;
+function typeWriter() {
+  if (i < txt.length) {
+    // Add blinking cursor using a conditional operator (ternary operator)
+    const cursor = cursorVisible ? "|" : "";
+    document.getElementById('status').innerHTML = txt.substring(0, i) + cursor;
 
-        i++;
+    if (txt.charAt(i) === '<')
+      inTag = true;
+    if (txt.charAt(i) === '>')
+      inTag = false;
 
-        if(i === 1)
-          setTimeout(typeWriter, 3000);
-        else if (!inTag)
-          setTimeout(typeWriter, speed);
-        else
-          typeWriter();
-      }
+    i++;
+    cursorVisible = !cursorVisible; // Toggle cursor visibility
+
+    if (i === 1)
+      setTimeout(typeWriter, 3000);
+    else if (!inTag)
+      setTimeout(typeWriter, speed);
+    else
+      typeWriter();
+  }
 }
 
 typeWriter();

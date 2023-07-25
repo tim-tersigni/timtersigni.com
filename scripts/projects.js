@@ -15,8 +15,14 @@ function makeTiles(numTiles, projects) {
     projectImage.className = 'project-image';
     projectImage.src = project.image;
     projectImage.alt = `A picture of ${project.name}`
+    
+    const projectTitle = document.createElement('h3')
+    projectTitle.className = 'project-title'
+    projectTitle.innerHTML = project.name;
+
     projectImageDiv.appendChild(projectImage);
     projectLinkWrapper.appendChild(projectImage);
+    projectLinkWrapper.appendChild(projectTitle);
 
     const projectDescDiv = document.createElement('div');
     projectDescDiv.style.aspectRatio = '1';
@@ -30,13 +36,13 @@ function makeTiles(numTiles, projects) {
       grid.appendChild(projectLinkWrapper);
       grid.appendChild(projectDescDiv);
     }
-    
     else {
       grid.appendChild(projectDescDiv);
       grid.appendChild(projectLinkWrapper);
     }
   }
 }
+
 function main(data) {
   console.log(data);
   let projects = data.projects;
