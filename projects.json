@@ -30,7 +30,7 @@
 
     {
       "name": "Etch A Sketch",
-      "description": "Created interactive drawing grid using JavaScript which listens for mouse hovering events. Constructed website layout using HTML and CSS after designing UI in Figma.",
+      "description": "Fun interactive drawing grid app using JavaScript which listens for mouse hovering events.",
       "image": "../images/etch-a-sketch.png",
       "link": "https://github.com/tim-tersigni/odin-etch-a-sketch"
     },

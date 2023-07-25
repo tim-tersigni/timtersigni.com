@@ -7,6 +7,7 @@ function makeTiles(numTiles, projects) {
     const projectLinkWrapper = document.createElement('a');
     projectLinkWrapper.href = project.link;
     projectLinkWrapper.className = "tile tile-link-wrapper shrink-on-hover"
+    projectLinkWrapper.target = "_blank"
     
     const projectImageDiv = document.createElement('div');
     projectImageDiv.style.aspectRatio = '1';
