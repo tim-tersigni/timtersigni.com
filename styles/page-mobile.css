@@ -59,4 +59,8 @@
   .project-desc {
     font-size: 0.75rem;
   }
+
+  .tile > img {
+    filter: brightness(70%) blur(1px);
+  }
 }
