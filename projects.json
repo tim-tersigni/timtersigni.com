@@ -2,14 +2,14 @@
   "projects": [
     {
       "name": "Nerveli Medical Dashboard",
-      "description": "Medical dashboard web-app for nerve pain management startup Nerveli",
+      "description": "Custom medical dashboard web-app made for nerve pain management startup Nerveli",
       "image": "../images/nerveli-dashboard.png",
       "link": "https://www.youtube.com/watch?v=4PQANvC7iZY"
     },
 
     {
       "name": "4 Bit Breadboard ALU",
-      "description": "Custom designed and hand-wired 4-bit ALU built on breadboards",
+      "description": "Hand-wired ALU designed in Logisim and built on breadboards using Texas Instruments’ logic gate, flip flop, and multiplexor SN74LS chips ",
       "image": "../images/breadboard.png",
       "link": "https://www.youtube.com/watch?v=whvLmXYZUJQ"
     },
@@ -43,7 +43,7 @@
 
     {
       "name": "Restaurant Optimization Program",
-      "description": "Created restaurant simulation using Python to exemplify multithreaded resourse allocation. Modeled optimal restaurant management using semaphores to control shared resources and avoid deadlocks.",
+      "description": "Multithreaded restaurant simulation program built to practice deadlock avoidant programming",
       "image": "../images/restaurant-optimization-program.png",
       "link": "https://github.com/tim-tersigni/Restaurant-Optimization"
     }
