@@ -36,10 +36,10 @@
     },
 
     {
-      "name": "Linux Home Server",
-      "description": "Ubuntu Server home lab project built to improve and experiment with networking skills",
+      "name": "Networking Projects",
+      "description": "I have a variety of experiences with computer networking projects. As most do not have github repositories or demos this is a a PDF documenting each project.",
       "image": "../images/tux.jpg",
-      "link": ""
+      "link": "./documents/Networking-Projects.pdf"
     },
 
     {
