@@ -2,28 +2,28 @@
   "projects": [
     {
       "name": "Nerveli Medical Dashboard",
-      "description": "Custom medical dashboard web-app made for nerve pain management startup Nerveli",
+      "description": "Custom medical dashboard web-app made for nerve pain management startup Nerveli.",
       "image": "../images/nerveli-dashboard.png",
       "link": "https://www.youtube.com/watch?v=4PQANvC7iZY"
     },
 
     {
       "name": "4 Bit Breadboard ALU",
-      "description": "Hand-wired ALU designed in Logisim and built on breadboards using Texas Instruments’ logic gate, flip flop, and multiplexor SN74LS chips ",
+      "description": "Hand-wired ALU designed in Logisim and built on breadboards using Texas Instruments’ logic gate, flip flop, and multiplexor SN74LS chips.",
       "image": "../images/breadboard.png",
       "link": "https://www.youtube.com/watch?v=whvLmXYZUJQ"
     },
 
     {
       "name": "Client Server Chat",
-      "description": "Multi-threaded client-server chat application utilizing TCP, UDP, and encryption",
+      "description": "Multi-threaded client-server chat application utilizing TCP, UDP, and encryption.",
       "image": "../images/client-server-chat.png",
       "link": "https://github.com/tim-tersigni/Server-Based-Chat"
     },
 
     {
       "name": "Emission Omission",
-      "description": "Hackathon web-app built to compute carbon emissions of a vehicles travel using Google Maps API",
+      "description": "Hackathon web-app built to compute carbon emissions of a vehicles travel using Google Maps API.",
       "image": "../images/emission-omission.png",
       "link": "https://github.com/Neilio3264/Emission-Omission"
     },
@@ -44,7 +44,7 @@
 
     {
       "name": "Restaurant Optimization Program",
-      "description": "Multithreaded restaurant simulation program built to practice deadlock avoidant programming",
+      "description": "Multithreaded restaurant simulation program built to practice deadlock avoidant programming.",
       "image": "../images/restaurant-optimization-program.png",
       "link": "https://github.com/tim-tersigni/Restaurant-Optimization"
     }
