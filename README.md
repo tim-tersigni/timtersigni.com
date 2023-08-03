@@ -1,3 +1,2 @@
-# tim-tersigni.github.io
-Portfolio website to help me learn html, css, and vanilla javascript. 
-(https://tim-tersigni.github.io)
+# Portfolio Website
+This website was designed by me in Figma and made using vanilla HTML, CSS, and Javascript to exercise my web development fundamentals.
