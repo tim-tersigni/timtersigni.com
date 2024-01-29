@@ -1,6 +1,6 @@
 console.log('typewriter.js loaded');
 
-var txt = `Seeking a full-time job in software engineering, cloud computing, or DevOps. 
+var txt = `Seeking a full-time job in software development and IT. 
 I am eager to apply my experience and learn new things! Please contact me with any opportunities.<br/><br/>Contact me:
  <a href="mailto:tim.tersigni@gmail.com" target="_blank" style="color: white">tim.tersigni@gmail.com<\a>`;
 var speed = 45;
